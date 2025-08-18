@@ -1,74 +1,909 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Capstone Project – Engred Vanegas</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #4f46e5;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    a {
-      color: #4f46e5;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Capstone Project ePortfolio</h1>
-    <p>Engred Vanegas | BS Computer Science</p>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OrnaFlow — Capstone Project</title>
+    <meta name="description" content="Capstone portfolio page for CS-499." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Animated ambient spotlights for extra depth -->
+    <div class="spotlight one"></div>
+    <div class="spotlight two"></div>
 
-  <main>
-    <section>
-      <h2>About This Project</h2>
-      <p>
-        This page will house the capstone project that represents the final enhancement of a mobile Android application originally built during the CS 360: Mobile Architecture and Programming course.
-        It will be fully reimagined as a fullstack web application designed for Ornamaze. Which is a handcrafted soap and skincare company. It will use modern technologies such as Next.js, FastAPI, and PostgreSQL.
-      </p>
-    </section>
+    <div class="wrapper">
+      <header class="eportfolio-header" aria-label="ePortfolio header">
+        <!-- Masthead -->
+        <div class="masthead">
+          <h1 class="eportfolio-title">
+            Engred Vanegas <span class="pill">ePortfolio</span>
+          </h1>
+          <p class="tagline">Capstone Project for <strong>CS-499</strong></p>
+        </div>
 
-    <section>
-      <h2>Enhancement Categories</h2>
-      <ul>
-        <li><strong>Software Engineering and Design:</strong> Will rebuild the system architecture by using fullstack frameworks and responsive UI.</li>
-        <li><strong>Algorithms and Data Structures:</strong> Will implement intelligent filtering, alert logic, and custom sorting features.</li>
-        <li><strong>Databases:</strong> Will migrate from SQLite to PostgreSQL and build a normalized schema with secure data handling.</li>
-      </ul>
-    </section>
-  </main>
+        <!-- III. Professional Self-Assessment -->
+          <section
+            id="self-assessment"
+            class="card section-card"
+            aria-label="Professional Self-Assessment"
+          >
+            <header>
+              <h2>Professional Self-Assessment</h2>
+              <span class="pill">Written narrative</span>
+            </header>
+            <div class="writeup">
+              <p>
+                Completing my coursework throughout the computer science program and developing my capstone 
+                ePortfolio has helped me to showcase my strengths, shape my professional goals and values, 
+                and prepare me to enter or become more employable in the computer science field in many ways. 
+                One of them being this last class, where I was not only given the opportunity to demonstrate 
+                my technical skills through OrnaFlow (my capstone project), but it also helped me clearly 
+                define my professional goals, and what I want to do career wise. 
+              </p>
+              <p>
+                Thanks to the journal prompts assigned throughout this capstone class I was able to fully 
+                cement my choice in combining my newly acquired computer science skills with my past academic 
+                background in biology, psychology, and neuroscience. After much debating on what industry or 
+                sector to work in based on everything I know, I finally decided to pursue some type of research 
+                and development role as my career choice.
+              </p>
+              <p>
+                Throughout SNHU’s computer science program, I have been able to build a foundation not only on 
+                the theory side of things but also in its applications across multiple domains with hands on 
+                projects and assignments. Which I consider to be one of the reasons why this has further allowed 
+                me to become a more competitive and versatile candidate in the field overall. 
+              </p>
+              <p>
+                As I reflect back on my academic growth and professional skills throughout my coursework in this 
+                program, I could surely say that it has consistently pushed me to expand my capabilities in problem 
+                solving, system design, and critical thinking. The projects in web/mobile development, and databases 
+                as well have allowed me to practice modern frameworks and databases that simulate real-world contexts. 
+                Another important reflection was about collaborating in a team environment. As this was something I 
+                got the chance to experience in a real-world scenario during my internship at The Washington Post. It 
+                allowed me to not only contribute to a real codebase used by journalists daily, but also to systems that 
+                ultimately lead to the published stories read by millions of subscribers. This experience further reinforced 
+                in me the importance of writing reliable, maintainable code, developing the type of collaboration needed within 
+                a professional engineering workflow, how to break down problems and leverage version control effectively in order 
+                to ensure a smooth integration of everyone’s contributions. As well as reviewing peer solutions, participating in 
+                standups, code reviews, adding onto the documentation files they have, and most importantly resolving conflicts 
+                collaboratively. 
+              </p>
+              <p>
+                This also brings me to the next point, communicating with stakeholders. My coursework in this computer science 
+                program has prepared me in designing applications where I learned much about translating technical concepts into 
+                more user-focused requirements, which is a skill that is truly vital whenever we are working with a non-technical 
+                client(s), or cross-functional teams. The opportunity of working alongside journalists and editors during my 
+                internship is what allowed me to understand their workflows but also made me ensure that the tools that I contributed 
+                to during my time there also enhanced their ability to produce timely and accurate stories. The importance of clarity, 
+                empathy, and responsiveness was once more reinforced here. All things that are of major importance in order to be able 
+                to bridge the gap between technology and the people that rely on it.
+              </p>
+              <p>
+                Thanks to this computer science program I also gained a strong practice in implementing data structures such as trees, 
+                queues, and graphs. These are skills that were invaluable when I had to design my search and filtering algorithms for 
+                my capstone project in order to ensure both efficiency and scalability. I was also able to efficiently design a 
+                relational database schema, build Restful APIs thanks to the software engineering and database proficiency obtained 
+                throughout this computer science program. By applying principles of modular design, reusability, and code best practices 
+                across multiple class projects and including my final capstone project. Another important sector that I not only learned 
+                but was also exposed to throughout my coursework implementation was that of security awareness. This includes becoming 
+                aware of best practices in securing applications through input validation, password hashing, and even minimizing 
+                vulnerabilities. This is what allows me to ensure I protect users data and in whatever application I build.
+              </p>
+              <p>
+                My ePortfolio showcases all of these strengths through my final capstone project – OrnaFlow. I chose a single artifact to 
+                focus on and build upon from section to section. This web app demonstrates my evolution from understanding core principles 
+                in computer science and software engineering to applying them in a fullstack web app for a real use case. The centerpiece 
+                of my ePortfolio is OrnaFlow of course, which is an inventory management web application built with Next.js, FastAPI, and 
+                PostgreSQL. Furthermore, this project clearly and effectively illustrates my skills and ability to design and implement a 
+                real-world system from scratch, covering frontend design, backend development, API creation, and database schema design. 
+                Again, this once again demonstrates applied skills in algorithms and data structures, and user interface design. With this, 
+                I strongly emphasize that together with my artifact, my abilities are fully reflected across software engineering, data 
+                management, and algorithm design. 
+              </p>
+            </div>
+          </section>
+        <!-- Hero with folder -->
+        <div class="hero">
+          <div class="folder-wrap" aria-hidden="true">
+            <svg
+              viewBox="0 0 1200 480"
+              role="img"
+              aria-labelledby="folderTitle"
+            >
+              <title id="folderTitle">OrnaFlow</title>
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="var(--folder-fill-1)" />
+                  <stop offset="50%" stop-color="#22d3ee" />
+                  <stop offset="100%" stop-color="var(--folder-fill-2)" />
+                </linearGradient>
+                <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(255,255,255,.28)" />
+                  <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                </linearGradient>
+                <filter
+                  id="innerShadow"
+                  x="-50%"
+                  y="-50%"
+                  width="200%"
+                  height="200%"
+                >
+                  <feOffset dx="0" dy="2" />
+                  <feGaussianBlur stdDeviation="6" result="blur" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"
+                  />
+                  <feBlend in="SourceGraphic" mode="normal" />
+                </filter>
+              </defs>
 
-  <footer>
-    &copy; 2025 Engred Vanegas – All Rights Reserved
-  </footer>
-</body>
+              <!-- Folder body -->
+              <g filter="url(#innerShadow)">
+                <path
+                  d="M120 150c0-22 18-40 40-40h220c18 0 26 0 36 8l28 20c8 6 12 8 22 8h454c22 0 40 18 40 40v176c0 22-18 40-40 40H160c-22 0-40-18-40-40V150Z"
+                  fill="url(#g1)"
+                  opacity="0.92"
+                />
+                <path
+                  d="M160 110h206c10 0 14 2 22 8l34 24H420c-22 0-40 18-40 40H160c-22 0-40-18-40-40s18-32 40-32Z"
+                  fill="url(#g1)"
+                />
+                <rect
+                  x="120"
+                  y="146"
+                  width="960"
+                  height="220"
+                  rx="22"
+                  fill="url(#shine)"
+                />
+              </g>
+
+              <!-- Dotted sparkles -->
+              <g opacity=".4">
+                <circle cx="210" cy="210" r="2" fill="#fff" />
+                <circle cx="305" cy="260" r="2" fill="#fff" />
+                <circle cx="420" cy="200" r="2" fill="#fff" />
+                <circle cx="700" cy="250" r="2" fill="#fff" />
+                <circle cx="980" cy="220" r="2" fill="#fff" />
+                <circle cx="860" cy="310" r="2" fill="#fff" />
+              </g>
+
+              <!-- Centered title -->
+              <g class="folder-title" transform="translate(600,256)">
+                <text
+                  class="title-main"
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                >
+                  OrnaFlow
+                </text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page links located below the OrnaFlow svg folder -->
+      <nav class="topnav page-links" aria-label="Jump links">
+        <a href="#self-assessment">Self-Assessment</a>
+        <a href="#code-review">Informal Code Review</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#enh1">Enhancement One</a>
+        <a href="#enh2">Enhancement Two</a>
+        <a href="#enh3">Enhancement Three</a>
+        <a href="https://github.com/EngredV/CS499-Capstone" target="_blank" rel="noopener">View Code ↗</a>
+      </nav>
+      <main class="grid">
+
+        <!-- Side Nav (sn) -->
+        <aside class="sn card" aria-label="On-page navigation">
+            <h3>Contents</h3>
+            <a href="#self-assessment" class="sn-link">Professional Self-Assessment</a>
+            <a href="#code-review" class="sn-link">Informal Code Review</a>
+            <a href="#artifacts" class="sn-link">Artifacts and Their Narratives</a>
+            <a href="#enh1" class="sn-link">Software Design and Engineering</a>
+            <a href="#enh2" class="sn-link">Algorithms and Data Structures</a>
+            <a href="#enh3" class="sn-link">Databases</a>
+            <div style="height:.6rem"></div>
+            <div class="badge" title="Ready to submit?">
+                <span class="dot ok"></span>
+                Published
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <div class="content">
+            
+          <!-- I. Informal Code Review -->
+          <section
+            id="code-review"
+            class="card section-card"
+            aria-label="Informal Code Review"
+          >
+            <header>
+              <h2>Informal Code Review</h2>
+              <span class="pill">Video</span>
+            </header>
+            <div class="media" aria-label="Code review video">
+            <video controls poster="Assets/images/thumbnails/code_review_thumbnail.png">
+              video coming soon />
+            </video>
+            </div>
+
+            <!-- Subsection header for the figma designs gallery -->
+            <div class="subsection" aria-labelledby="designs-title">
+              <header class="subheader">
+                <h3 id="designs-title">Figma Design Mockups</h3>
+                <span class="pill">Gallery - 18 images</span>
+              </header>
+              <p class="subdesc">
+                Since I chose to create a new web app from scratch and I 
+                didn't have any code nor any app to show I went ahead and
+                designed some UI screens for OrnaFlow using figma. I also 
+                show all screens in both dark and light themes. You can 
+                click on any thumbnail to open the fullscreen preview. 
+                You can also use either the on-screen arrows or your 
+                keyboard's left and right arrows to navigate the image 
+                gallery and either the Esc key or click on the 'x' to exit.
+              </p>
+            </div>
+
+            <!-- Figma designs - a total of 18 images-->
+            <div
+              class="gallery designs two-col"
+              aria-label="Figma designs (18 images)"
+            >
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/dashboard_dark.png"
+                  aria-label="Open Dashboard - Dark"
+                >
+                  <img loading="lazy" src="Assets/images/figma/dashboard_dark.png" alt="Dashboard dark" />
+                </button>
+                <figcaption>Deashboard - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/dashboard_light.png"
+                  aria-label="Open dashboard - Light"
+                >
+                  <img loading="lazy" src="Assets/images/figma/dashboard_light.png" alt="Dashboard light" />
+                </button>
+                <figcaption>Dashboard - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/inventory_dark.png"
+                  aria-label="Open Inventory - Dark"
+                >
+                  <img loading="lazy" src="Assets/images/figma/inventory_dark.png" alt="Inventory dark" />
+                </button>
+                <figcaption>Inventory - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/inventory_light.png"
+                  aria-label="Open Inventory - Light"
+                >
+                  <img loading="lazy" src="Assets/images/figma/inventory_light.png" alt="Inventory light" />
+                </button>
+                <figcaption>Inventory - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/add_item_dark.png"
+                  aria-label="Add Item - Dark"
+                >
+                  <img loading="lazy" src="Assets/images/figma/add_item_dark.png" alt="Add item dark" />
+                </button>
+                <figcaption>Add Item - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/add_item_light.png"
+                  aria-label="Add Item - Light"
+                >
+                  <img loading="lazy" src="Assets/images/figma/add_item_light.png" alt="Add item light" />
+                </button>
+                <figcaption>Add Item - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/edit_item_dark.png"
+                  aria-label="Edit Item - Dark"
+                >
+                  <img loading="lazy" src="Assets/images/figma/edit_item_dark.png" alt="Edit item dark" />
+                </button>
+                <figcaption>Edit Item - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/edit_item_light.png"
+                  aria-label="Edit Item - Light"
+                >
+                  <img loading="lazy" src="Assets/images/figma/edit_item_light.png" alt="Edit item light" />
+                </button>
+                <figcaption>Edit Item - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/confirm_delete_dark.png"
+                  aria-label="Confirm Delete - Dark"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/confirm_delete_dark.png"
+                    alt="Confirm delete dark"
+                  />
+                </button>
+                <figcaption>Confirm Delete - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/confirm_delete_light.png"
+                  aria-label="Confirm Delete - Light"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/confirm_delete_light.png"
+                    alt="Confirm delete light"
+                  />
+                </button>
+                <figcaption>Confirm Delete - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/soapbar_modal_dark.png"
+                  aria-label="Soap Bar Modal - Dark"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/soapbar_modal_dark.png"
+                    alt="Soap bar modal dark"
+                  />
+                </button>
+                <figcaption>Soap Bar Modal - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/soapbar_modal_light.png"
+                  aria-label="Soap Bar Modal - Light"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/soapbar_modal_light.png"
+                    alt="Soap bar modal light"
+                  />
+                </button>
+                <figcaption>Soap Bar Modal - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/soapbar_detail_page_dark.png"
+                  aria-label="Soap Bar Detail Page - Dark"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/soapbar_detail_page_dark.png"
+                    alt="Soap bar detail page dark"
+                  />
+                </button>
+                <figcaption>Soap Bar Detail Page - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/soapbar_detail_page_light.png"
+                  aria-label="Soap Bar Detail Page - Light"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/soapbar_detail_page_light.png"
+                    alt="Soap bar detail page light"
+                  />
+                </button>
+                <figcaption>Soap Bar Detail Page - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/soap_inventory_filter_dark.png"
+                  aria-label="Soap Inventory Filter - Dark"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/soap_inventory_filter_dark.png"
+                    alt="Soap inventory dark"
+                  />
+                </button>
+                <figcaption>Soap Inventory Filter - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/soap_inventory_filter_light.png"
+                  aria-label="Soap Inventory Filter - Light"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/soap_inventory_filter_light.png"
+                    alt="Soap inventory filter light"
+                  />
+                </button>
+                <figcaption>Soap Inventory Filter - Light</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/alert_modal_dark.png"
+                  aria-label="Alert Modal - Dark"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/alert_modal_dark.png"
+                    alt="Alert modal dark"
+                  />
+                </button>
+                <figcaption>Alert Modal - Dark</figcaption>
+              </figure>
+              <figure>
+                <button
+                  class="zoom"
+                  data-full="Assets/images/figma/alert_modal_light.png"
+                  aria-label="Alert Modal - Light"
+                >
+                  <img
+                    loading="lazy"
+                    src="Assets/images/figma/alert_modal_light.png"
+                    alt="Alert modal light"
+                  />
+                </button>
+                <figcaption>Alert Modal - Light</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- II. Artifacts and their Narratives -->
+          <section
+            id="artifacts"
+            class="card section-card"
+            aria-label="Artifacts and Their Narratives"
+          >
+            <header>
+              <h2>Artifacts and Their Narratives</h2>
+              <span class="pill">Brief Explanation</span>
+            </header>
+            <div class="writeup">
+              <p>
+                I chose only one artifact for this capstone project. Schedufy, a mobile web app
+                I made using android studio for my CS360: Mobile Architecture and Programming
+                course. This mobile app originally served as an event tracking android application,
+                built in Java with a SQLite databse. 
+              </p>
+
+              <p>
+                My purpose for this capstone project was to completely restructure the original mobile 
+                app's use case. However, this would involve reimagining the app's use case, function, 
+                and purpose. In other words, instead of tracking events as I originially did with Schedufy,
+                I will now be tracking inventory items. 
+              </p>
+
+              <p>
+                My goal for this new version was to make a web app this time instead of a mobile app and also
+                to design this web app specifically for the use case of Ornamaze, my personal business 
+                specializing in handmade soaps and skincare. This way I will be able to use it in order to be
+                able to track my overall inventory levels of both ingredients and products more efficiently.
+              </p>
+
+              <p>
+                I have attached a flowchart below so you can see how I plan the main dashboard to function
+                for OrnaFlow:
+              </p>
+            </div>
+            <!-- OrnaFlow system/flow diagram -->
+            <figure class="diagram" aria-labelledby="diagram-caption">
+                <button class="zoom"
+                        data-full="Assets/images/flowchart/OrnaFlow_diagram.png"
+                        aria-label="Open OrnaFlow Dashboard Flowchart Diagram">
+                    <img loading="lazy" src="Assets/images/flowchart/OrnaFlow_diagram.png"
+                         alt="OrnaFlow Dashboard flowchart Diagram" />
+                </button>
+                <figcaption id="diagram-caption">
+                    Figure: OrnaFlow Dashboard Flowchart
+                </figcaption>
+            </figure>
+          </section>
+
+          <!-- Enhancement 1 -->
+          <section
+            id="enh1"
+            class="card section-card"
+            aria-label="Software Design and Engineering"
+          >
+            <header>
+              <h2>Software Design and Engineering</h2>
+              <span class="pill">Architecture • UI • Responsive Layouts</span>
+            </header>
+            <div class="media" aria-label="Demo video">
+              <div class="placeholder">
+                Video coming soon.
+              </div>
+            </div>
+            <div class="writeup">
+              <h3>Narrative</h3>
+              <p>
+                Once again, the artifact that I chose is an event-tracking mobile application that I developed 
+                in JAVA using Android Studio for my CS360: Mobile Architecture and Programming course. This app 
+                allows users to create, edit, view, and delete events that have titles, dates, times, and 
+                descriptions. All of its data is stored locally via SQLite. 
+              </p>
+              <p>
+                I selected this item because it closely resembled what I wanted to do because much of its logic 
+                from event-tracking can be transferred onto what I want to do which is inventory tracking. The 
+                specific components of this project that showcase my skills and abilities in software development 
+                is the design and development of a mobile application revolving around data management and logic 
+                via the RecyclerView in order to display events and manages state. These are all logic I could 
+                transfer onto my new inventory tracking app even though we will not be using the same tech stack 
+                nor will it be a mobile app. 
+              </p>
+              <p>
+                This new app has been redesigned from the ground up and most of the frontend has been implemented. 
+                I still have some work to do like adding a login and sign up. I decided not to add these for now 
+                because it is designed for personal use after all and I will be the only person using this web app. 
+                I have enhanced the artifact by creating the main dashboard, the inventory page, the alerts page, 
+                the batches page, added routing functionality to them as well, and added light and dark themes to 
+                the web app.
+              </p>
+              <p>
+                The process of enhancing and modifying OrnaFlow was interesting and fun. It had its challenges, 
+                yes, but nothing that I can’t overcome. I find Next.js pretty much just like React, which of course 
+                it is based off. Setting it up was easy following the main documentation, especially considering that 
+                they overhauled a whole bunch of things in version fifteen which bought new features that were pretty
+                useful for us to use here. As for Tailwind CSS, I must say that they also overhauled a whole bunch of 
+                in their new version four, and other things they didn’t simplify too much, one of them being implementing
+                light and dark modes/themes. This was one of the challenges, especially when it came to applying the light
+                and dark theme. I did it by using React context and localStorage. In the end, what this left me with is a 
+                deeper understanding for how state management, DOM manipulation, and user experience persistence all work 
+                together across all sessions.
+              </p>
+              <p>
+                My professor's feedback was positive and so I just focused on adding more features that were needed such as
+                the batches page which I didn't have when I first submitted this section, and responsive layouts. I must admit 
+                that with responsive layouts it took way too much time than I thought it would. I wanted to make sure that I 
+                implemented these best practices and that my web app would be adaptable and visible across all screens. 
+              </p>
+              <p>
+                I met the course outcomes that I planned to meet with this enhancement. I first wanted to design a concept 
+                in figma which I did, then I wanted to implement it via code, all the while learning a bit more how to style 
+                with tailwind CSS. In the end, the enhancements that I made for this category one strongly align with software 
+                design and engineering principles. More so when it came to improving scalability, modularity, separation of 
+                concerns, and even user experience across devices. This redesign will also help prepare the app for potential 
+                integrations such as AI-based recommendations, which I feel I left adequate room for, all the while adhering 
+                to industry standards in modern web development. As for what I feel weren't met, I really wanted to add a 
+                formulas section where I can input my formulas and keep track of my experiments. For this I will need a notes 
+                section and a way to upload images and videos.
+              </p>
+              <h3>Gallery</h3>
+              <div class="app-gallery">
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/dashboard.png" alt="dashboard" />
+                <figcaption>Dashboard</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/dashboard_mobile.png" alt="dashboard mobile" />
+                <figcaption>Dashboard Mobile</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/alert_shea_detail_page.png" alt="alert shea detail page" />
+                <figcaption>Alert Shea Detail Page</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/lo_alert_page_detail_mobile.png" alt="lavender eo alert page detail mobile" />
+                <figcaption>Lavender EO Page Detail Mobile</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/batch_detail_page.png" alt="batch detail page" />
+                <figcaption>Batch Detail Page</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/inventory_overview_mobile.png" alt="inventory overview mobile" />
+                <figcaption>Inventory Overview Mobile</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/cream_cloud_detail_page.png" alt="cream cloud detail page" />
+                <figcaption>Cream Cloud Detail Page</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/cc_batch_mobile_view.png" alt="cream cloud batch mobile view" />
+                <figcaption>Cream Cloud Batch Mobile View</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/oils_butters_cat_card.png" alt="oils, butters category card" />
+                <figcaption>Oils, Butters Category Card</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/eos_fos_cat_card_mobile.png" alt="eos fos category card mobile" />
+                <figcaption>EOs, FOs Category Card Mobile</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/lo_details_page_mobile.png" alt="lavender eo details page mobile" />
+                <figcaption>Lavender EO Details Page Mobile</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/add_inventory_mobile.png" alt="add inventory mobile" />
+                <figcaption>Add Inventory Mobile</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/olive_oil_detail_page.png" alt="olive oil detail page" />
+                <figcaption>Olive Oil Detail Page</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/SDE/soap_bars_cat_card.png" alt="soap bars category card" />
+                <figcaption>Soap Bars Category Card</figcaption>
+              </figure>
+            </div>
+            </div>
+          </section>
+
+          <!-- Enhancement 2 -->
+          <section
+            id="enh2"
+            class="card section-card"
+            aria-label="Algorithms and Data Structures"
+          >
+            <header>
+              <h2>Algorithms and Data Structures</h2>
+              <span class="pill">Search • Filtering</span>
+            </header>
+            <div class="media" aria-label="Demo video">
+              <div class="placeholder">
+                Video coming soon.
+              </div>
+            </div>
+            <div class="writeup">
+              <h3>Narrative</h3>
+              <p>
+                As you're already aware, I decided to use only one artifact across this whole capstone project, and I decided to 
+                build OrnaFlow from the ground up. I chose to build this inventory web app for this section of the capstone because 
+                it showcases my ability to build a complex, real-world app that involves integrating both frontend and backend technologies 
+                completely from scratch. The creation of this app will help demonstrate my ability in developing full lifecycle apps which 
+                ranges from designing not only the UI of the web app but also the database schema, API routes in FastAPI, implementing 
+                efficient data fetching and even UI filtering as well. OrnaFlow reflects not just my technical ability but also my practical 
+                problem-solving and project management skills.
+              </p>
+              <p>
+                Therefore, continuing to build upon OrnaFlow, I focused on implementing most of the algorithms and data structures requirement
+                for this section which involved enhancing OrnaFlow with multi-criteria filtering, real-time search, sorting mechanisms, and alert 
+                generation logic. Yes, I met the course outcomes that I planned to meet with this enhancement section. I had proposed to enhance 
+                four things for this section – search and filtering, low inventory alerts, sorting algorithm for quantity and expiring ingredients 
+                and products, and batch expiration logic as well. Out of these four, I achieved the first three and the fourth one I will integrate 
+                after submitting the project which is the batch expiration logic. I wasn’t able to do so due to time, and I chose to prioritize other
+                functions and features that were more urgent to tackle.
+              </p>
+              <p>
+                For the first enhancement – search and filtering, I set it up so that I would be able to search inventory and alerts by partial name 
+                (first two-three letters), category, ingredient/item, status, and even message. I used regex pattern filtering along with an array 
+                filter in order to be able to implement this first feature. I even managed to add a feature where the words (from result) that match 
+                what was searched are highlighted. I will be following my professor's feedback to be more specific in my narrative, and I will be implementing more
+                details into my narrative as a result. 
+
+                <ul>
+                    <li>Data Structure used: Arrays of objects from fetched data and it's processed in-memory.</li>
+                    <li>Algorithmic Strategy: Filtering with .filter() and regex pattern filtering.</li>
+                    <li>Time Complexity:</li>
+                    <ul>
+                        <li>Regex filtering: <strong>O(n)</strong> where n is the number of items that are on the list.</li>
+                        <li>Since the operation is fast for small to moderate datasets, which is the case for my use case, it is ideal for the expected scale of OrnaFlow.</li>
+                    </ul>
+                    <li>Optimization Considerations: I plan to implement pagination and even backend-based filtering when the dataset grows in the future.</li>
+                </ul>
+              </p>
+              <p>
+                The second enhancement involved implementing low inventory alerts by using a threshold-based algorithm, the goal here was to flag items whose quantity fall below 
+                a minimum threshold that we need to input. The example I used to test if my implementation was successful was setting Lavender Essential Oil’s minimum to 128 oz 
+                and I put that Lavender Essential Oil has 127 oz in stock. As expected, the system picked up on the low threshold and triggered a yellow triangular warning icon 
+                next to the stock available and also changed the status tag it had to a low stock one. On the alerts page an alert was created notifying me that Lavender Essential 
+                Oil is below its threshold.
+
+                <ul>
+                    <li>Data Structure used: plain JavaScript objects in order to represent inventory items. The alerts are stored in an array and rendered in a table.</li>
+                    <li>Time Complexity: <strong>O(n)</strong> for checking each item (so per item check) and again, where n is the number of items that are on the list.</li>
+                </ul>
+              </p>
+              <p>
+                For the third enhancement I made in this second part of the capstone was the sorting algorithm for quantity and expiration by using custom sorting algorithms. This 
+                lets me sort by the quantity of the ingredient and soap bars. As well as their expiration dates. I briefly tested both the sorting by expiration dates from soonest 
+                to expire first and latest to expire first and sorting by quantity from lowest to highest and from highest to lowest with the small amount of data I had.
+
+                <ul>
+                    <li>Data Structure used: again, used inventory items as objects in an array and sorted in place.</li>
+                    <li>Time Complexity: <strong>O(n log n)</strong> since this is what JavaScript's built-in .sort() time complexity typically is for average and worst cases.</li>
+                </ul>
+              </p>
+              <p>
+                While implementing this section of the capstone, I found that I deepened my understanding of state-driven UI development. More specifically, when 
+                it comes to complex user interactions such as multi-filtering, search, and selection. I gained practical experience with implementing and testing performance efficient 
+                data filtering, sorting, and conditional logic implementation not only for my real-world business requirements but that can also be applied to other real-world business 
+                requirements as well. 
+              </p>
+              <p>
+                A key challenge that I faced in this section of the capstone was definitely with the filtering logic. Getting the filtering system to support multi-select and sync with 
+                all of the UI features I have going on such as the pills, and filter selection modal, required very careful state management and much frequent debugging. I also had to 
+                ensure that data remained consistent across multiple components while also maintaining performance and a clean UI/UX.  
+              </p>
+              <h3>Gallery</h3>
+              <div class="app-gallery">
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/soap_category_search.png" alt="soap category search" />
+                <figcaption>Soap Category Search</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/shea_butter_Search.png" alt="shea butter search" />
+                <figcaption>Shea Butter Search</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/status_color_filter.png" alt="status color filter" />
+                <figcaption>Status Color Filter</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/status_filter_light.png" alt="status filter light" />
+                <figcaption>Status Filter - Light</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/status_search.png" alt="status search" />
+                <figcaption>Status Search</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/status_search_light.png" alt="status search light" />
+                <figcaption>Status Search - Light</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/high_to_low_filter.png" alt="high to low filter" />
+                <figcaption>High To Low Filter</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/ADS/alerts_sort_a-z.png" alt="alerts sort a-z" />
+                <figcaption>Alerts Sort A-Z</figcaption>
+              </figure>
+            </div>
+            </div>
+          </section>
+
+          <!-- Enhancement 3 -->
+          <section id="enh3" class="card section-card" aria-label="Databases">
+            <header>
+              <h2>Databases</h2>
+              <span class="pill">Schema • Performance • Reliability</span>
+            </header>
+            <div class="media" aria-label="Demo video">
+              <div class="placeholder">
+                Video coming soon.
+              </div>
+            </div>
+            <div class="writeup">
+              <h3>Narrative</h3>
+              <p>
+                Again, I decided to use only one artifact across this whole capstone project, OrnaFlow. I chose to build the OrnaFlow web app for this section of the capstone because 
+                again, it allows me to demonstrate my ability to build a complex, real-world app involving a fullstack integration. Remember, that the original artifact that I chose 
+                was an event-tracking mobile application that I developed for my CS360: Mobile Architecture and Programming course built in JAVA using Android Studio. This app allows 
+                users to create, edit, view, and delete events that have titles, dates, times, and descriptions, that is, normal CRUD operations. All of its data is stored locally via SQLite for simple local data 
+                storage. However, I quickly realized that it lacks scalability and the ability to handle multi-user interactions which is important. Which is why I also selected this 
+                item because I wanted to showcase my skills in upgrading and integrating PostgreSQL as the chosen database for my new inventory tracking web app - Ornaflow. This 
+                implementation and setting up from scratch demonstrate how much both my understanding and application of database systems in a real-world project or setting has 
+                advanced. Other abilities that this improvement showcases is my ability to design and normalize complex relational schemas, implement foreign key constraints, and 
+                also structure query relationships that are efficient. In this case, I did it for inventory items, batches, status tags, categories, units, and even batch ingredients 
+                tables. By integrating PostgreSQL with FastAPI my fullstack proficiency in not only managing asynchronous database queries, handling ORM relationships, and also ensuring 
+                that the data integrity is kept across users. 
+              </p>
+              <p>
+                To break it down more, I designed a normalized relational schema in order to be able to fully represent complex business logic such as batch tracking, ingredient usage, 
+                and stock statuses. I also implemented JOIN queries so that I could efficiently fetch related data such as units, ingredients, and even the soap bars themselves, and 
+                finally, handling CRUD operations via SQLAlchemy ORM. My professor's feedback was positive for this section and so I focused on ironing out some final details of the app 
+                overall, finish getting everything connected overall, adding more test data (seeding data), and prepping for further features that I will add after submitting the project.
+                Yes, I met the course outcomes that I planned to meet with this enhancement. I successfully migrated and or implemented PostgreSQL and Fast API. As for what I feel I have
+                left to implement, I still need to finish creating a modal to input individual soap bar information, images, and tracking. I also need to integrate both the barcodes and qr 
+                codes in a way where I can scan them with my phone. As well as adding logic for the system to automatically calculate ingredient usage and available stock instead of having
+                to update it manually myself. Same for the soap bars too.
+              <p>
+                As I was creating the database and improving it, I learned how to design relational database schemas in order to fully accommodate my evolving business needs while also making 
+                sure that redundancy is avoided and most importantly, keeping consistency. Upon reflecting, I realized that the most critical lesson I had through this section of the capstone 
+                is how important it is to truly understand schema relationships since we can have one to many or many to many. This is important because we need to keep in mind and even estimate 
+                how this will directly impact query complexity, as well as data retrieval patterns. One of the challenges that I came across was mismatches between the ORM models and the API schemas. 
+                This was especially true when having to deal with nested relationships. For this I had to implement foreign keys, manage join tables, and properly serialize the data so that no raw ORM 
+                instances are leaked.
+              </p>
+              <h3>Gallery</h3>
+              <div class="app-gallery">
+              <figure>
+                <img loading="lazy" src="assets/images/Databases/add_inventory_item.png" alt="add inventory item" />
+                <figcaption>Add Inventory Item</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/Databases/create_new_alert.png" alt="create new alert" />
+                <figcaption>Create New Alert</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/Databases/edit_alert.png" alt="edit alert" />
+                <figcaption>Edit Alert</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/Databases/create_new_batch.png" alt="create new batch" />
+                <figcaption>Create New Batch</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/Databases/edit_batch.png" alt="edit batch" />
+                <figcaption>Edit Batch</figcaption>
+              </figure>
+              <figure>
+                <img loading="lazy" src="assets/images/Databases/edit_inventory_item.png" alt="edit inventory item" />
+                <figcaption>Edit Inventory Item</figcaption>
+              </figure>
+            </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="wrapper">
+        <p>© 2025 Engred Vanegas — ePortfolio</p>
+        <p>Built for SNHU Capstone. Hosted on GitHub Pages.</p>
+      </footer>
+    </div>
+
+    <a class="to-top" href="#self-assessment" aria-label="Back to top">▲ Top</a>
+    <!-- Image Lightbox Modal for figma designs gallery-->
+    <div
+      id="lightbox"
+      class="lightbox"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="lightbox-backdrop" data-close></div>
+      <figure
+        class="lightbox-content"
+        role="document"
+        aria-labelledby="lbCaption"
+      >
+        <img id="lbImg" alt="" />
+        <figcaption id="lbCaption"></figcaption>
+        <button class="lb-close" aria-label="Close preview">✕</button>
+        <button class="lb-prev" aria-label="Previous image">‹</button>
+        <button class="lb-next" aria-label="Next image">›</button>
+      </figure>
+    </div>
+    <!-- Single image modal for OrnaFlow's flowchart diagram -->
+    <div id="diagrambox" class="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="lightbox-backdrop" data-close></div>
+        <figure class="lightbox-content" role="document" aria-labelledby="dbCaption">
+            <img id="dbImg" alt="" />
+            <figcaption id="dbCaption"></figcaption>
+            <button class="lb-close" aria-label="Close preview">✕</button>
+        </figure>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
 </html>
